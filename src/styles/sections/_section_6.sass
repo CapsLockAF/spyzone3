@@ -1,0 +1,23 @@
+.block-6
+  width: 100%
+  //background-color: #9893fa
+  background-repeat: no-repeat
+  background-position: right top
+  background-size: cover
+  background-color: #9994FB
+  //background: #9893fa url("../img/img_block_6/block6_bg.jpg")no-repeat right top / cover
+  &__content
+    @extend  .block-5__content
+
+  &__item-text
+    @extend .block-5__item-text
+    align-items: flex-start
+    p
+      font-family: $monSemiBold
+      font-size: $fontText
+      line-height: 1.4
+      margin-bottom: $marginSmall
+  &__item-heading
+    @extend .block-5__item-heading
+  &__item-img
+    max-width: rem(624)

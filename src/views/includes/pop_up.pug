@@ -1,0 +1,12 @@
+.pop-up
+    .block-3__form.block_padding-top.pop-up__block
+        #popup-close.pop-up__close
+            p +
+        h2.block-3__heading Замовлення свята<br>
+        form#form_popup.form-bl3(method='POST' action='#')
+            p
+                input#name-popup.form-bl3__input(type='text' name='name-popup' form='form_popup' placeholder="Ваше ім'я" required)
+            p
+                input#phone-popup.form-bl3__input(type="tel" name='phone-popup' form='form_popup' placeholder="Ваш номер телефону" required)
+        p.form-subtext Залиште заявку прямо зараз та проведіть ваше<br> <strong>свято на майданчику безкоштовно!</strong>
+        button.submit-btn.btn_style_2(type='submit' form='form_popup') Замовити

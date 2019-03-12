@@ -1,0 +1,68 @@
+.block-3
+  width: 100%
+  min-height: rem(450)
+  background: url("../img/img_block_3/block-3__img.png") no-repeat left top / rem(937), linear-gradient(to right, #83ddfe, #450c94)
+  &__content
+    width: 100%
+    display: flex
+    justify-content: flex-end
+  &__form
+    display: flex
+    flex-direction: column
+    align-items: center
+    max-width: rem(570)
+    span
+      font-family: $monBold
+      color: $white
+      font-size: rem(30)
+      text-align: center
+      line-height: 1.1
+      text-shadow: 1px 3px 5px rgba(90, 64, 107, 0.75)
+      margin-bottom: rem(25)
+  &__heading
+    font-family: $monBold
+    color:  #f23c92
+    font-size: rem(36)
+    text-align: center
+    line-height: 1.1
+    text-shadow: 1px 3px 5px rgba(90, 64, 107, 0.75)
+
+.form-bl3
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-wrap: wrap
+  width: 100%
+  margin-bottom: $marginSmall
+  p
+    width: rem(262)
+    display: inline-block
+    margin: rem(8)
+  &__input
+    width: rem(262)
+    height: rem(40)
+    padding: 1rem
+    border: none
+    font-family: $monMedium
+    color: $black
+    border-radius: rem(10)
+    background-color: #ededed
+    box-shadow: 0 5px 5px rgba(91, 7, 143, 0.75)
+    &:focus
+      outline: none
+    &::placeholder
+      font-family: $monMedium
+      font-size: rem(14)
+      color: #72747f
+
+.form-subtext
+  font-family: $monMedium
+  color: $white
+  font-size: rem(18)
+  margin-bottom: rem(40)
+  line-height: 1.2
+  text-align: center
+  text-shadow: 1px 3px 5px rgba(90, 64, 107, 0.75)
+#form-btn
+  margin-bottom: rem(50)
+

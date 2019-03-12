@@ -1,0 +1,41 @@
+.service
+  width: 100%
+  background: rgba(#8f7bdc, 0.6)
+  padding-bottom: rem(50)
+  &__heading
+    position: relative
+    max-width: rem(205)
+    margin: 0 auto rem(50)
+    font-family: $lobster
+    font-size: rem(36)
+    color: $white
+    text-shadow: 2px 4px 5px rgba(91, 7, 143, 0.75)
+    &:after
+      content: ''
+      display: block
+      position: absolute
+      width: rem(165)
+      height: rem(5)
+      top: rem(-10)
+      left: rem(20)
+      background-color: $white
+  &__slider
+    width: rem(850)
+    margin: 0 auto
+  &__item
+    width: rem(260)
+    height: rem(395)
+    p
+      padding: rem(20) 0
+      font-family: $monBold
+      font-size: rem(16)
+      text-transform: uppercase
+      text-align: center
+
+.serv-img
+  width: 100%
+  height: rem(345)
+  padding: rem(16)
+  background-color: #ffffff
+  background-image: linear-gradient(to bottom right, rgba(#ffffff, 1), rgba($black, 0.2))
+  box-shadow: 2px 4px 24px 0px rgba(91, 7, 143, 0.75)

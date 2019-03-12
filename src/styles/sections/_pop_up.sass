@@ -1,0 +1,41 @@
+.pop-up
+  width: 100%
+  height: 100vh
+  position: fixed
+  top: 0
+  left: 0
+  display: none
+  justify-content: center
+  align-items: center
+  background-color: rgba(#420293, 0.4)
+  overflow-y: auto
+  z-index: 1000
+  &__close
+    display: flex
+    justify-content: center
+    align-items: center
+    position: absolute
+    width: rem(50)
+    height: rem(50)
+    top: 0
+    right: 0
+    font-family: $monBold
+    font-size: rem(50)
+    transform: rotate(45deg)
+    border-radius: 50%
+    background-color: $btn_color_1
+    box-shadow: 2px 4px 5px 0 rgba(91, 7, 143, 0.75)
+    cursor: pointer
+
+  &__block
+    position: relative
+    border-radius: rem(10)
+    padding: rem(50) $marginSmall
+    box-shadow: 2px 4px 5px 0px rgba(91, 7, 143, 0.75)
+    background: linear-gradient(to right bottom, #5902e2, #6f65ff)
+
+
+.pop-up.visible_flex
+  display: flex
+
+

@@ -1,0 +1,68 @@
+.block-2
+  width: 100%
+  min-height: rem(430)
+  background-repeat: no-repeat
+  background-position: center top
+  background-size: cover
+  //background: url("../img/img_block_2/block2_bg.jpg") no-repeat left top / cover
+  &__heading
+    position: relative
+    max-width: rem(270)
+    margin: 0 auto rem(50)
+    font-family: $lobster
+    font-size: rem(36)
+    color: $black
+    &:after
+      content: ''
+      display: block
+      position: absolute
+      width: rem(165)
+      height: rem(5)
+      top: -1rem
+      left: rem(50)
+      background-color: $btn_color_1
+  &__content
+    display: flex
+    justify-content: space-around
+    align-items: center
+    flex-wrap: wrap
+    width: 100%
+  &__item-1
+    display: flex
+    flex-direction: column
+    align-items: center
+    width: rem(212)
+    height: rem(212)
+    border-radius: 50%
+    background-color: $white
+    margin: 0 rem(8) rem(25) rem(8)
+    box-shadow: -5px 0px 14px 0px rgba(43, 6, 64, 0.46)
+    img
+      width: rem(62)
+      height: rem(62)
+      margin-bottom: rem(10)
+      margin-top: $marginSmall
+  &__item-2
+    @extend .block-2__item-1
+    img
+      width: rem(74)
+      height: rem(66)
+  &__item-3
+    @extend .block-2__item-1
+    img
+      width: rem(62)
+      height: rem(50)
+      margin-top: rem(22)
+  &__item-4
+    @extend .block-2__item-1
+    img
+      width: rem(58)
+      height: rem(62)
+  &__item-5
+    @extend .block-2__item-1
+  &__p
+    font-family: $monMedium
+    font-size: rem(14)
+    color: #5d267c
+    text-align: center
+    padding: rem(5)

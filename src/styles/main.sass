@@ -1,0 +1,135 @@
+@import "utils/variables"
+@import "utils/mixins"
+@import "utils/extends"
+@import "utils/fonts"
+@import "libs"
+
+html, body
+  font-size: calc(13px + 0.2vw) !important
+body
+  min-width: 320px
+  background-color: #ffffff
+  color: $white
+a
+  cursor: pointer
+  text-decoration: none
+button:focus, button:active
+  outline: none
+
+.container
+  max-width: 1920px
+  margin: 0 auto
+.wrapper
+  max-width: 1170px
+  margin: 0 auto
+
+.main-btn, .submit-btn
+  border: none
+  width: rem(165)
+  height: rem(40)
+  border-radius: rem(10)
+  font-family: $monBold
+  font-size: rem(18)
+  color: $white
+  cursor: pointer
+.btn_style_1
+  background-color: $btn_color_1
+  box-shadow: 2px 4px 5px 0 rgba(91, 7, 143, 0.75)
+  transition: background-color 0.2s ease-in-out
+  &:hover
+    background-color: rgba(91, 7, 143, 1)
+
+.btn_style_2
+  background-color: $btn_color_2
+  box-shadow: 2px 4px 5px 0px rgba(91, 7, 143, 0.75)
+  transition: background-color 0.2s ease-in-out
+  &:hover
+    background-color: rgba(91, 7, 143, 1)
+
+img
+  width: 100%
+
+.block_padding-top
+  padding-top: rem(70)
+.block_padding-lr
+  padding-left: $marginSmall
+  padding-right: $marginSmall
+
+.buttom-btn
+  margin-bottom: rem(36)
+
+//slider navigstion
+.block_relative
+  position: relative
+
+#service-navs, #service-navs, #promo-navs
+  height: 0
+
+#slider-navs button
+  border: none
+  background: none
+.arrow-left, .arrow-right
+  width: rem(33)
+  height: rem(70)
+  margin: $marginSmall
+  cursor: pointer
+  opacity: 0.8
+  transition: 0.2s ease-in-out
+  &:hover
+    opacity: 1
+.arrow-left
+  position: absolute
+  top: 50%
+  left: 0
+  z-index: 99
+  background: url("../img/arrow-left.png")no-repeat center center / cover
+.arrow-right
+  position: absolute
+  top: 50%
+  right: 0
+  z-index: 99
+  background: url("../img/arrow-right.png")no-repeat center center / cover
+//++++++++++++++++++++
+#service-navs button, #promo-navs button
+  border: none
+  background: none
+.service-left, .service-right, .promo-left, .promo-right
+  width: rem(33)
+  height: rem(70)
+  margin: $marginSmall
+  cursor: pointer
+  opacity: 0.8
+  transition: 0.2s ease-in-out
+  &:hover
+    opacity: 1
+.service-left, .promo-left
+  position: absolute
+  top: 50%
+  left: 0
+  z-index: 99
+  background: url("../img/arrow-left.png")no-repeat center center / cover
+.service-right, .promo-right
+  position: absolute
+  top: 50%
+  right: 0
+  z-index: 99
+  background: url("../img/arrow-right.png")no-repeat center center / cover
+
+.promo-left, .promo-right
+  top: 40%
+
+
+//sections
+@import "sections/pop_up"
+@import "sections/section_1"
+@import "sections/section_2"
+@import "sections/section_3"
+@import "sections/section_4"
+@import "sections/section_5"
+@import "sections/section_6"
+@import "sections/section_7"
+@import "sections/section_8"
+@import "sections/section_9"
+@import "includes/footer"
+//END ONLY MEDIA
+@import "utils/media"

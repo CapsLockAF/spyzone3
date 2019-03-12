@@ -1,0 +1,20 @@
+//rem FUNCTION
+$browser-context: 16 // Default
+@function rem($pixels, $context: $browser-context)
+  @return #{$pixels/$context}rem
+
+//colors
+$white: #ffffff
+$btn_color_1: #811eb7
+$btn_color_2: #dc1d77
+$black: #333333
+
+//fonts
+$monBold: 'Montserrat-Bold', sans-serif
+$monSemiBold: 'Montserrat-SemiBold', sans-serif
+$monMedium: 'Montserrat-Medium', sans-serif
+$lobster: 'Lobster', sans-serif
+
+$fontText: rem(16)
+
+$marginSmall: rem(18)

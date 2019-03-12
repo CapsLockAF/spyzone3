@@ -1,0 +1,140 @@
+.block-4
+  width: 100%
+  //background-repeat: no-repeat
+  background-position: left top
+  //background-size: cover
+  //background: url("../img/img_block_4/block4_bg.jpg")no-repeat left top / cover
+  &__heading
+    position: relative
+    max-width: rem(270)
+    margin: 0 auto rem(50)
+    font-family: $monBold
+    font-size: rem(36)
+    color: $black
+    span
+      font-family: $lobster
+    &:after
+      content: ''
+      display: block
+      position: absolute
+      width: rem(165)
+      height: rem(5)
+      top: -1rem
+      left: rem(50)
+      background-color: $btn_color_1
+  &__content
+    display: flex
+    flex-direction: column
+    align-items: center
+    width: 100%
+    margin-bottom: rem(50)
+  &__item_size
+    display: flex
+    justify-content: space-around
+    align-items: center
+    flex-wrap: wrap
+    width: 100%
+    margin-bottom: $marginSmall
+    P
+      margin-bottom: $marginSmall
+  &__item-heading
+    font-family: $lobster
+    font-size: rem(30)
+    color: $black
+  &__item-img
+    width: rem(300)
+    height: rem(300)
+  &__item-text
+    max-width: rem(640)
+  &__item-1
+    flex-wrap: wrap-reverse
+    strong
+      font-weight: normal
+      color: #2b6bd0
+    ul
+      margin-top: $marginSmall
+      list-style: none
+      li
+        font-family: $monMedium
+        font-size: $fontText
+        color: $black
+        margin-bottom: rem(10)
+        line-height: 1.6
+        &:before
+          content: ''
+          display: inline-block
+          width: rem(14)
+          height: rem(14)
+          border-radius: 50%
+          border-style: solid
+          border-width: 3px
+          border-color:  #ffffff
+          background: -webkit-linear-gradient(22deg, #00cccc 0%, #6600ff 100%)
+          background: -moz-linear-gradient(22deg, #00cccc 0%, #6600ff 100%)
+          background: -o-linear-gradient(22deg, #00cccc 0%, #6600ff 100%)
+          background: -ms-linear-gradient(22deg, #00cccc 0%, #6600ff 100%)
+          background: linear-gradient(68deg, #00cccc 0%, #6600ff 100%)
+          box-shadow: -2px 3px 9px 0px rgba(0, 0, 0, 0.75)
+          margin-right: rem(9)
+  &__item-2
+    line-height: 1.6
+    strong
+      font-weight: normal
+      color: #331eb7
+    p
+      font-family: $monMedium
+      font-size: $fontText
+      color: $black
+  &__item-3
+    flex-wrap: wrap-reverse
+    line-height: 1.6
+    strong
+      font-weight: normal
+      color: #1e99b7
+    p
+      font-family: $monMedium
+      font-size: $fontText
+      color: $black
+  &__item-4
+    line-height: 1.6
+    strong
+      font-weight: normal
+      color:  #13d4b2
+    p
+      font-family: $monMedium
+      font-size: $fontText
+      color: $black
+    b
+      font-size: rem(18)
+  &__item-5
+    flex-wrap: wrap-reverse
+    line-height: 1.6
+    strong
+      font-weight: normal
+      color: #13d437
+    p
+      font-family: $monMedium
+      font-size: $fontText
+      color: $black
+  &__item-6
+    line-height: 1.6
+    strong
+      font-weight: normal
+      color: #b9c903
+    p
+      font-family: $monMedium
+      font-size: $fontText
+      color: $black
+  &__item-7
+    flex-wrap: wrap-reverse
+    line-height: 1.6
+    strong
+      font-weight: normal
+      color:  #fbb700
+    p
+      font-family: $monMedium
+      font-size: $fontText
+      color: $black
+
+.text_right
+  text-align: right
